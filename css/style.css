@@ -1,0 +1,367 @@
+:root{
+    --header-color: #1b1a24;
+    --header-text-color: #aab1c0;
+    --header-menu-mobile: #414b58;
+    --section1-bg: #aab1c0;
+    --section2-bg: #414b58;
+    --section3-bg: #16212e;
+    --section4-bg: #1b1a24;
+    --footer-bg: black;
+    --text-color: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mingzat', sans-serif;
+}
+
+html, body {
+    height:100%;
+}
+
+/* Utilities */
+
+.clear{
+    clear: both;
+}
+
+.img-turn-left{
+    transform: rotateZ(-10deg)
+}
+
+.img-turn-right{
+    transform: rotateZ(10deg)
+}
+
+.slick-dots li button:before {
+    color: white;
+}
+
+.slick-dots li.slick-active button:before {
+    color:white !important;
+}
+
+.slick-prev:before,
+.slick-next:before{
+    font-size: 30px;
+}
+
+/* .container{
+    max-width:1200px;
+    padding: 0 2%;
+} */
+
+/* Header */
+
+header{
+    background-color: var(--header-color);
+    height: 80px;
+    width: 100%;
+}
+
+header nav{
+    width: 100%;
+}
+
+header nav ul.menu-desktop{
+    display:flex;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+header nav ul.menu-desktop li a{
+    color: var(--header-text-color);
+    text-decoration: none;
+}
+
+header nav ul.menu-desktop li a:hover{
+    opacity: 0.5;
+    color: var(--header-text-color);
+    text-decoration: none;
+}
+
+.menu-mobile{
+    display:none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    z-index: 2;
+}
+
+.menu-mobile li{
+    background-color: var(--header-menu-mobile);
+    line-height: 30px;
+    color: var(--text-color);
+    text-align: center;
+    border-bottom: white 1px solid;
+}
+
+.menu-mobile li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 0;
+    color: var(--text-color);
+}
+
+.menu-mobile li a:hover{
+    text-decoration: underline;
+}
+
+#trigger-mobile-menu{
+    display: none;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+#trigger-mobile-menu img{
+    width: 40px;
+    height: 40px;
+}
+
+/* Section Quem Somos */
+
+#QuemSomos{
+    background-color: var(--section1-bg);
+    padding: 20px 0px 60px 0px;
+}
+
+.header-text-section-quem-somos{
+    text-align: center;
+    color: var(--text-color);
+    letter-spacing: 3px;
+}
+
+.img-quem-somos{
+    width: 80%;
+    border-radius: 20px;
+    animation-name: img-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Section Projetos */
+
+#Projetos{
+    padding: 0px 0px 60px 0px ;
+    background-color: var(--section2-bg);
+}
+
+.background-text-section{
+    background: var(--section1-bg); /* fallback */
+    background:
+        -moz-linear-gradient(45deg,  transparent 10px, var(--section1-bg) 10px),
+        -moz-linear-gradient(40deg, transparent 10px, var(--section1-bg) 10px),
+        -moz-linear-gradient(225deg, transparent 10px, var(--section1-bg) 10px),
+        -moz-linear-gradient(315deg, transparent 10px, var(--section1-bg) 10px);
+    background:
+        -o-linear-gradient(45deg,  transparent 10px, var(--section1-bg) 10px),
+        -o-linear-gradient(40deg, transparent 10px, var(--section1-bg) 10px),
+        -o-linear-gradient(225deg, transparent 10px, var(--section1-bg) 10px),
+        -o-linear-gradient(315deg, transparent 10px, var(--section1-bg) 10px); 
+    background:
+        -webkit-linear-gradient(29deg,  transparent 43px, var(--section1-bg) 46px),
+        -webkit-linear-gradient(151deg, transparent 43px, var(--section1-bg) 46px),
+        -webkit-linear-gradient(153deg, transparent 27px, var(--section1-bg) 30px),
+        -webkit-linear-gradient(27deg, transparent 27px, var(--section1-bg) 30px);
+    background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2.8rem;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.projeto-list{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider{
+    width:100%;
+}
+
+.slider img{
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Section Depoimentos */
+
+#Depoimentos{
+    padding: 0px 0px 80px 0px;
+    background-color: var(--section3-bg);
+}
+
+.background-text-section-projeto{
+    background: var(--section2-bg); /* fallback */
+    background:
+        -moz-linear-gradient(45deg,  transparent 10px, var(--section2-bg) 10px),
+        -moz-linear-gradient(40deg, transparent 10px, var(--section2-bg) 10px),
+        -moz-linear-gradient(225deg, transparent 10px, var(--section2-bg) 10px),
+        -moz-linear-gradient(315deg, transparent 10px, var(--section2-bg) 10px);
+    background:
+        -o-linear-gradient(45deg,  transparent 10px, var(--section2-bg) 10px),
+        -o-linear-gradient(40deg, transparent 10px, var(--section2-bg) 10px),
+        -o-linear-gradient(225deg, transparent 10px, var(--section2-bg) 10px),
+        -o-linear-gradient(315deg, transparent 10px, var(--section2-bg) 10px); 
+    background:
+        -webkit-linear-gradient(29deg,  transparent 43px, var(--section2-bg) 44px),
+        -webkit-linear-gradient(151deg, transparent 42px, var(--section2-bg) 45px),
+        -webkit-linear-gradient(153deg, transparent 27px, var(--section2-bg) 29px),
+        -webkit-linear-gradient(27deg, transparent 27px, var(--section2-bg) 29px);
+    background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2.8rem;
+    width: 480px;
+    margin: 0 auto;
+}
+
+.depoimentos{
+    width: 80%;
+    margin: 80px auto 0px auto;
+    padding-bottom: 80px;
+}
+
+.depoimento-item{
+    text-align: center;
+}
+
+.depoimento-item h4{
+    color: var(--text-color);
+}
+
+.depoimento-item p{
+    color: var(--text-color);
+    flex-wrap: wrap;
+}
+
+.depoimento-header{
+    display: flex;
+    justify-content: center;
+}
+
+.depoimento-header h4{
+    margin-right:15px;
+}
+
+.depoimento-header p{
+    margin-right:10px;
+}
+
+.languages{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.languages p{
+    padding: 8px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+/* Section Contato */
+
+#Contato{
+    padding: 90px 0;
+    background-color: var(--section4-bg);
+}
+
+.form-contact{
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+}
+
+/* Animations */
+
+@keyframes img-animation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        transform: translateY(0px);
+    }  
+}
+
+/* Media queries */
+@media screen and (max-width: 768px){
+    .menu-desktop{
+        display:none!important;
+    }
+
+    #trigger-mobile-menu{
+        display: block;
+    }
+
+    .img-quem-somos{
+        width: 50%;
+        border-radius: 20px;
+        animation-name: none;
+    }
+
+    .img-turn-left{
+        transform: rotateZ(0deg)
+    }
+    
+    .img-turn-right{
+        transform: rotateZ(0deg)
+    }
+
+    .background-text-section{
+        background:
+        -webkit-linear-gradient(29deg,  transparent 43px, var(--section1-bg) 46px),
+        -webkit-linear-gradient(151deg, transparent 43px, var(--section1-bg) 46px),
+        -webkit-linear-gradient(153deg, transparent 27px, var(--section1-bg) 30px),
+        -webkit-linear-gradient(27deg, transparent 27px, var(--section1-bg) 30px);
+        font-size: 2rem;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .background-text-section-projeto{
+        background:
+        -webkit-linear-gradient(29deg,  transparent 43px, var(--section2-bg) 44px),
+        -webkit-linear-gradient(151deg, transparent 42px, var(--section2-bg) 45px),
+        -webkit-linear-gradient(153deg, transparent 27px, var(--section2-bg) 29px),
+        -webkit-linear-gradient(27deg, transparent 27px, var(--section2-bg) 29px);
+        background-position: bottom left, bottom right, top right, top left;
+        font-size: 1.7rem;
+        width: 280px;
+        margin: 0 auto;
+    }
+}

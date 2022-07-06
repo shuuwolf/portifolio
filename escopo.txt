@@ -1,0 +1,22 @@
+- Um portfólio, é um exemplo do seu trabalho, qualquer coisa que prove para o seu cliente que você tem:
+- Capacidade Tecnica, conhecimento, habilidade. Tudo isso para entregar a solução que ele procura.
+- A importancia do portfolio é para garantir a o meu cliente que eu tenho capacidade para fazer tal trabalho, Os clientes gostam de ver e experimentar os seus sistemas anteriores para realmenter acreditar que você tem capacidade de executação.
+- O portfólio mostra que você sabe, e você prova que sabe fazer tal coisa. //prático
+O Cliente quer no portfólio(não precisa ser 100%):
+- Segurança
+- Qualidade
+- Pagar o menor valor possível*
+- Receber o Melhor Produto
+1 pilar) Aparência
+- Atrativo e Visualmente Interessante
+2 pilar) Segurança
+-Comprovar Capacidade Técnica
+3 pilar) Consistência
+- Coerente, Homogêneo, Previsível. // A experiencia do usuário deve ser previsível, para que ele se sinta menos frustrado de encontrar determinado item
+
+ITEMS OBRIGATÒRIOS EM UM PORTFÓLIO:
+- Cara de Portfólio
+- Várias Formas de Contato
+- Seus MELHORES Trabalhos
+- Qualidade TÉCNICA (Carregar rápido, ser responsivo, sem erros no console, usar HTTPS)
+- Organização e navegação CLARA de qualidade.(Mapa do site, Menu de navegação clarissimo)
