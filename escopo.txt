@@ -20,3 +20,37 @@ ITEMS OBRIGATÒRIOS EM UM PORTFÓLIO:
 - Seus MELHORES Trabalhos
 - Qualidade TÉCNICA (Carregar rápido, ser responsivo, sem erros no console, usar HTTPS)
 - Organização e navegação CLARA de qualidade.(Mapa do site, Menu de navegação clarissimo)
+
+*Pra arrumar*
+
+-nome do documento
+-paleta de cores
+-botao
+-valor das options
+
+ <section id="Projetos">
+        <div class="container">
+            <div class="background-text-section">PROJETOS</div>
+            <div class="row mt-4">
+                <div class="col-mb-12">
+                    <div class="projeto-list">
+                        <div class="slider">
+                            <a href="https://shuuwolf.github.io/bootstrap-shop-pichau-copy-/"><img src="images/pichau.png" alt="projeto pichau"></a>
+                        </div>
+                        <div class="slider">
+                            <a href="https://shuuwolf.github.io/Projeto_10/"><img src="images/projeto_10.png" alt="imagem do projeto 10"></a>
+                        </div>
+                        <div class="slider">
+                            <a href="https://shuuwolf.github.io/Fylo-Front-Challenge/"><img src="images/fylo-project.png" alt="Projeto Fylo-Front-Challenge"></a>
+                        </div>
+                        <div class="slider">
+                            <a href="https://github.com/shuuwolf/Melhorando-Classicos"><img src="images/melhorando_classicos.png" alt="Projeto Melhorando Classicos"></a>
+                        </div>
+                        <div class="slider">
+                            <a href="https://shuuwolf.github.io/Projeto_04/"><img src="images/projeto-4.png" alt="Projeto 04"></a>
+                        </div>
+                    </div><!-- /projeto-list -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </section><!-- /#Projetos -->
