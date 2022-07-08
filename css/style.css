@@ -61,6 +61,21 @@ html, body {
     opacity: 0;
 }
 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #303030;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #636363;
+    border-radius: 10px;
+    border: 3px solid #000000;
+  }
+
 /* .container{
     max-width:1200px;
     padding: 0 2%;
@@ -208,10 +223,10 @@ header nav ul.menu-desktop li a:hover{
 
 .card-img-top img{
     width: 100%;
-    height: 15vw;
-    object-fit: cover;
+    height: 250px;
+    object-fit: fill;
     margin-left: 10px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 /* Section Depoimentos */
@@ -298,23 +313,79 @@ header nav ul.menu-desktop li a:hover{
 /* Section Contato */
 
 #Contato{
-    height: 100vh;
+    height: 80vh;
     background-color: var(--section4-bg);
 }
 
-.form-contact{
+.background-text-section-contato{
+    background: var(--section3-bg); /* fallback */
+    background:
+        -moz-linear-gradient(45deg,  transparent 10px, var(--section3-bg) 10px),
+        -moz-linear-gradient(40deg, transparent 10px, var(--section3-bg) 10px),
+        -moz-linear-gradient(225deg, transparent 10px, var(--section3-bg) 10px),
+        -moz-linear-gradient(315deg, transparent 10px, var(--section3-bg) 10px);
+    background:
+        -o-linear-gradient(45deg,  transparent 10px, var(--section3-bg) 10px),
+        -o-linear-gradient(40deg, transparent 10px, var(--section3-bg) 10px),
+        -o-linear-gradient(225deg, transparent 10px, var(--section3-bg) 10px),
+        -o-linear-gradient(315deg, transparent 10px, var(--section3-bg) 10px); 
+    background:
+        -webkit-linear-gradient(29deg,  transparent 43px, var(--section3-bg) 46px),
+        -webkit-linear-gradient(151deg, transparent 43px, var(--section3-bg) 46px),
+        -webkit-linear-gradient(153deg, transparent 27px, var(--section3-bg) 30px),
+        -webkit-linear-gradient(27deg, transparent 27px, var(--section3-bg) 30px);
+    background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2.8rem;
+    width: 360px;
     margin: 0 auto;
+}
+
+.form-contact{
+    margin: 100px auto 0px auto;
     max-width: 700px;
     width: 100%;
+}
+
+.button-cta {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight:bold;
+	padding:11px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.button-cta:hover {
+	background:linear-gradient(to bottom, #aab1c0 5%, #ededed 100%);
+	background-color:#aab1c0;
+}
+.button-cta:active {
+	position:relative;
+	top:1px;
 }
 
 /* Footer */
 
 footer{
     text-align: center;
-    padding: 10px;
+    height: 11.8vh;
     background-color: var(--footer-bg);
     color: var(--text-color);
+    display: grid;
+    place-content: center;
 }
 
 /* Animations */
