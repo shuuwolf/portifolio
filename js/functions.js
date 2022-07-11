@@ -55,15 +55,15 @@ $(window).scroll( function(){
     }); 
 });
 
-// $('a[href^="#"]').on('click', function(event) {
-//   var target = $(this.getAttribute('href'));
-//   if (target.length) {
-//     event.preventDefault();
-//     $('html, body').animate({
-//       scrollTop: target.offset().top - 80
-//     }, 500);
-//   }
-// });
+$('a[href^="#"]').on('click', function(event) {
+  var target = $(this.getAttribute('href'));
+  if (target.length) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: target.offset().top - 80
+    }, 500);
+  }
+});
 
 $(function() {
   $('.pop').on('click', function() {
