@@ -352,25 +352,18 @@ header nav ul.menu-desktop li a:hover{
     width: 100%;
 }
 
-.button-cta {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-	background-color:#ededed;
+.button-cta {   
+	background-color:green;
 	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
 	cursor:pointer;
-	color:#777777;
+	color:white;
 	font-family:Trebuchet MS;
 	font-size:20px;
 	font-weight:bold;
 	padding:11px 76px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
 }
 .button-cta:hover {
-	background:linear-gradient(to bottom, #aab1c0 5%, #ededed 100%);
-	background-color:#aab1c0;
+    opacity: 0.8;   
 }
 .button-cta:active {
 	position:relative;
@@ -390,10 +383,10 @@ footer{
 
 /* Animations */
 
-.heartbeat {
+/* .heartbeat {
 	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
 	        animation: heartbeat 1.5s ease-in-out infinite both;
-}
+} */
 
 @keyframes heartbeat {
     from {
